@@ -1,0 +1,40 @@
+Codecademy HTML Notes:
+
+  NOTE: Throughout document ellipsis (...) is used to indicate text/links to be filled in
+
+- Always include <!DOCTYPE html> as first line of page to ensure correct interpretation by browser
+
+- Opening and closing tags provide further instruction to browser (Inline tages have form <cmd /> where cmd = command to be named)
+  - <!-- ... --> will allow for comments in code
+  - <html> ... </html> always needed to indicate bounds of html code
+  - <head> ... </head> contains header information (i.e. page name, page logo)
+    - <title> ... </title> used to give webpage title
+  - <body> ... </body> indicates main body of webpage code
+    - <hi> ... </hi> where i is {1,2,3,4,5,6} will create various sized headers for different sections
+    - <p> ... </p> will create new paragraph of text
+      - <br /> will create line break within block of text
+    - <div> ... </div> will divide code into sections
+      - adding certain code to tag will allow for linking within page
+    - <img src="..." /> will insert image
+      - adding alt="..." will provide image description if image fails to load; also used for diabaility assistance programs
+    - <video src="..."> ... </video> will insert video into page
+      - height, width, controls labels often inserted into opening tage to control size, function of video
+      - typically "Video Not Supported" text is inserted b/w opening and closing tags in case video doesn't load
+    - <a href="..."> ... </a> creates a link; can be wrapped around images to create links as well
+      - include target=_blank option to open link in new tab/window
+    - <ul> ... </ul> creates unordered (bullet pointed) list
+    - <ol> ... </ol> creates ordered (numbered) list
+      - both list types use <li> ... </li> to create new list items
+    - <table> ... </table> creates a new table
+      - <th> ... </th> create table headers
+        - scope="row/col" argument tells browser where header belongs
+        - colspan="n" option allows header to span n columns
+        - rowspan="n" option allows header to span n rows (useful for long headers)
+      - <tr> ... </tr> creates new table row
+      - <td> ... </td> creates new cell for table data
+        - NOTE: Each data cell must be individually created using the tags above; row and column tags do not create cells
+      - <tbody> ... </tbody> command allows us to section off table for better management of long, unruly tables
+        - <thread> ... </thread> creates sections
+      - <tfoot> ... </tfoot> creates footer
+    
+  - CSS files will allow us further customization to the above basic commands to create well designed webpages

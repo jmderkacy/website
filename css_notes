@@ -1,0 +1,36 @@
+Codecademy CSS Notes:
+
+  - CSS (Cascading Style Sheets) add and modify the settings browsers use to render webpages
+  
+  - Inline styling is done by adding attributes to the opening tags of html code
+    - follows the form: style="attribute: mod;"
+      - ex. <p style:"color: red;"> ... </p> will create a paragraph of red text
+    - inline styling must be done for every element individually, unless a global preference is specified in the header
+      - ex. <style> p {color: red,} </style> will make all paragraphs have red text
+      
+    - To avoid repetitive code or mixing of code, we create .css style files to store all of our relevant style information
+      - link .css file to .html file by including a link in the header
+        - ex. <link href="..." type="text/css" rel="stylesheet">
+    - attaching "!important" to any descriptor, no matter its specificity will override all other style attributes
+    - if two selectors require the same style, we can connect them together with commas to elimitate repetitive code
+      - ex. h1, .main { ... }
+    - id attributes will override all other style files for elements that need unique styling
+      - include #id in .css file
+    - multiple tags and classes can be used together for more creativity in styling
+    
+    - to modify a tag, insert the desired style inside curly braces following the tag name
+      - ex. h1 {
+                color: #FFF;
+                font-size: 2em;
+               }
+    - including a class attribute in html tag add another layer of customizability
+      - specified in .css file as .class_name {...}
+      - ex. .byline {
+                      font-family: Helvetica;
+                      color: rgba(255, 255, 255, 0.5);
+                      float: left;
+                      font-size: 14px;
+                      padding-left: 10px;
+                      text-transform: uppercase;
+                    }
+    

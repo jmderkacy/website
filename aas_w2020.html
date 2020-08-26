@@ -73,8 +73,8 @@
 					<ul>						
 						<li class="active"><a href="#" data-nav-section="home">AAS 2020 Home</a></li>
 						<li><a href="#" data-nav-section="about">About This Work</a></li>
-						<li><a href="#" data-nav-section="research">Our Model</a></li>
-						<li><a href="#" data-nav-section="quals">Line Identifications</a></li>
+						<li><a href="#" data-nav-section="model">Our Model</a></li>
+						<li><a href="#" data-nav-section="line_id">Line Identifications</a></li>
 						<li><a href="#" data-nav-section="contact">Contact</a></li>
 					</ul>
 				</div>
@@ -153,64 +153,155 @@
 			</section>
 		<!-- End Main Landing section -->
 
+		<!-- About This Work section -->
+		<section class="colorlib-services" data-section="about">
+		  <div class="colorlib-narrow-content">
+		    <div class="row">
+			<h2 class="colorlib-heading">About This Work</h2>
+		    </div>
+		    <p>The goal of this project is to take the first step towards closing the gap between observational and theoretical undertanding of the UV in Type Ia suernovae. To do so, we use both SYNOW and PHOENIX to identify all major features in the spectra for SN 2011fe at +3.4 days relative to maximum light. Additionally, we investigate the impact of line blanketing of iron group elements Fe, Co, and Ni on the fux levels in the UV, and present evidence of several temperature sensitive features in the far-UV. </p>
+		  </div>
+		</section>
+		<!-- End About This Work section -->
+
+		<!-- Our Model section -->
+		<section class="colorlib-services" data-section="model">
+		  <div class="colorlib-narrow-content">
+		    <div class="row">
+			<h2 class="colorlib-heading">The Model</h2>
+		    </div>
+		    <p style="text-align:justify">The model used here is a 1-D deflagration-to-detonation model previously used to simulate early time spectra of SN 2011fe (Baron et al. 2015) and has been shown to reproduce Branch-normal Type Ia's. The model uses a C/O wihite dwarf taken from the core of an evolved 5 <math>M<sub>Solar</sub></math> main sequence star. The white dwarf approaches the Chandrasekhar mass via accretion and explodes sopntaneously when the central density reaches <math>2*10<sup>9</sup> g cm<sup>-3</sup></math>, with a mass of roughly 1.37 <math>M<sub>Solar</sub></math> (Hoeflich 2002). The metallicity of the model is <math>Z<sub>Solar</sub>/20</math>. At velocities greater than <math>17,000 km s<sup>-1</sup></math>, the dentisty has been extended using a n=7 power law.</p>
+		    <div class="blog-entry">
+		      <h3><a href="./files/aas_w2020/rho_struct.png" class="blog-img" style="text-align:center"/> Density Structure </a></h3>
+		      <img src="./files/aas_w2020/rho_struct.png" class="img-responsive">
+		    </div>
+		    <div class="blog-entry">
+		      <h3><a href="./files/aas_w2020/element_struct.png" class="blog-img" style="text-align:center"/> Abundance Structure </a></h3>
+		      <img src="./files/aas_w2020/element_struct.png" class="img-responsive">
+		    </div>
+		    <p>We present two sythetic spectra of different luminosities, where L4 represents a 25% increase over the L1 model.</p>
+		    <div class="blog-entry">
+		      <h3><a href="./files/aas_w2020/UVONIR_fit_L1.png" class="blog-img" style="text-align:center"/> L1 Fit </a></h3>
+		      <img src="./files/aas_w2020/UVONIR_fit_L1.png" class="img-responsive">
+		    </div>
+		    <div class="blog-entry">
+		      <h3><a href="./files/aas_w2020/UVONIR_fit_L4.png" class="blog-img" style="text-align:center"/> L4 Fit </a></h3>
+		      <img src="./files/aas_w2020/UVONIR_fit_L4.png" class="img-responsive">
+		    </div>
+		    <div class="blog-entry">
+		      <h3><a href="./files/aas_w2020/uvonly_fit.png" class="blog-img" style="text-align:center"/> UV Comparison </a></h3>
+		      <img src="./files/aas_w2020/uvonly_fit.png" class="img-responsive">
+		    </div>
+		  </div>
+		</section>
+		<!-- End Our Model section -->
+
+		<!-- Line IDs section -->
+		<section class="colorlib-services" data-section="line-id">
+		  <div class="colorlib-narrow-content">
+		    <div class="row">
+			<h2 class="colorlib-heading">Line Identifications</h2>
+		    </div>
+		    <p style="text-align:justify">Line identifications using PHOENIX are typically done by examining <q>sinlge-ion spectra</q> (Bongard et al. 2008). This process requires artifically setting the line opacities to 0 for all lines except those belonging  to the ion of interest, while the level populations and free electrons from the full simulations are kept fixed. However, due to the complex blending and line blanketing by iron group elements in the UV, here we approach the problem differently. Instead, we generate a spectra without the ion of interest and subtract the full spectra from it to generate a residual spectra which indicates the areas of the full spectra where the contribution from the ion of interest is largest.</p>
+		    <div class="blog-entry">
+		      <h3><a href="./files/aas_w2020/c4_residual_flat.png" class="blog-img" style="text-align:center"/> C IV </a></h3>
+		      <img src="./files/aas_w2020/c4_residual_flat.png" class="img-responsive">
+		    </div>
+		    <div class="blog-entry">
+		      <h3><a href="./files/aas_w2020/mg2_residual_flat.png" class="blog-img" style="text-align:center"/> Mg II </a></h3>
+		      <img src="./files/aas_w2020/mg2_residual_flat.png" class="img-responsive">
+		    </div>
+		    <div class="blog-entry">
+		      <h3><a href="./files/aas_w2020/si2_residual_flat.png" class="blog-img" style="text-align:center"/> Si II </a></h3>
+		      <img src="./files/aas_w2020/si2_residual_flat.png" class="img-responsive">
+		    </div>
+		    <div class="blog-entry">
+		      <h3><a href="./files/aas_w2020/si4_residual_flat.png" class="blog-img" style="text-align:center"/> Si IV </a></h3>
+		      <img src="./files/aas_w2020/si4_residual_flat.png" class="img-responsive">
+		    </div>
+		    <div class="blog-entry">
+		      <h3><a href="./files/aas_w2020/cr2_residual_flat.png" class="blog-img" style="text-align:center"/> Cr II </a></h3>
+		      <img src="./files/aas_w2020/cr2_residual_flat.png" class="img-responsive">
+		    </div>
+		    <div class="blog-entry">
+		      <h3><a href="./files/aas_w2020/fe2_residual_flat.png" class="blog-img" style="text-align:center"/> Fe II </a></h3>
+		      <img src="./files/aas_w2020/fe2_residual_flat.png" class="img-responsive">
+		    </div>
+		    <div class="blog-entry">
+		      <h3><a href="./files/aas_w2020/fe3_residual_flat.png" class="blog-img" style="text-align:center"/> Fe III </a></h3>
+		      <img src="./files/aas_w2020/fe3_residual_flat.png" class="img-responsive">
+		    </div>
+		    <div class="blog-entry">
+		      <h3><a href="./files/aas_w2020/co2_residual_flat.png" class="blog-img" style="text-align:center"/> Co II </a></h3>
+		      <img src="./files/aas_w2020/co2_residual_flat.png" class="img-responsive">
+		    </div>
+		    <div class="blog-entry">
+		      <h3><a href="./files/aas_w2020/co3_residual_flat.png" class="blog-img" style="text-align:center"/> Co III </a></h3>
+		      <img src="./files/aas_w2020/co3_residual_flat.png" class="img-responsive">
+		    </div>
+		    <div class="blog-entry">
+		      <h3><a href="./files/aas_w2020/ni2_residual_flat.png" class="blog-img" style="text-align:center"/> Ni II </a></h3>
+		      <img src="./files/aas_w2020/ni2_residual_flat.png" class="img-responsive">
+		    </div>
+		  </div>
+		</section>
+		<!-- End Line IDs section -->
 
 		<!-- Contact Me section -->
-			<section class="colorlib-contact" data-section="contact">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Get in Touch</span>
-							<h2 class="colorlib-heading">Contact Me</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6">
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-inbox"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="mailto:jmderkacy@ou.edu">jmderkacy@ou.edu</a></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft" >
-								<div class="colorlib-icon">
-									<i class="icon-linkedin2"></i>
-								</div>
-								<div class="colorlib-text" >
-									<p><a href="https://www.linkedin.com/in/james-m-derkacy-364140175" target="_blank">linkedin.com/in/james-m-derkacy-364140175</a></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-social-twitter"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="https://twitter.com/jmderkacy" target="_blank">twitter.com/jmderkacy</a></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-github"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="https://github.com/jmderkacy" target="_blank">github.com/jmderkacy</a></p>
-								</div>
-							</div>
-						</div>
-						<!-- Copyright information, DO NOT REMOVE! -->
-						<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> <!-- <span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></span></small></p> -->
-					</div>
-				</div>
-			</section>
+		<section class="colorlib-contact" data-section="contact">
+		  <div class="colorlib-narrow-content">
+		    <div class="row">
+			<h2 class="colorlib-heading">Contact Me</h2>
+		      </div>
+		    </div>
+		    <div class="row">
+		      <div class="col-md-6">
+			<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+			  <div class="colorlib-icon">
+			    <i class="icon-inbox"></i>
+			  </div>
+			  <div class="colorlib-text">
+			    <p><a href="mailto:jmderkacy@ou.edu">jmderkacy@ou.edu</a></p>
+			  </div>
+			</div>
+		      </div>
+		      <div class="col-md-6">
+			<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft" >
+			  <div class="colorlib-icon">
+			    <i class="icon-linkedin2"></i>
+			  </div>
+			  <div class="colorlib-text" >
+			    <p><a href="https://www.linkedin.com/in/james-m-derkacy-364140175" target="_blank">linkedin.com/in/james-m-derkacy-364140175</a></p>
+			  </div>
+			</div>
+		      </div>
+		      <div class="col-md-6">
+			<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+			  <div class="colorlib-icon">
+			    <i class="icon-social-twitter"></i>
+			  </div>
+			  <div class="colorlib-text">
+			    <p><a href="https://twitter.com/jmderkacy" target="_blank">twitter.com/jmderkacy</a></p>
+			  </div>
+			</div>
+		      </div>
+		      <div class="col-md-6">
+			<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+			  <div class="colorlib-icon">
+			    <i class="icon-github"></i>
+			  </div>
+			  <div class="colorlib-text">
+			    <p><a href="https://github.com/jmderkacy" target="_blank">github.com/jmderkacy</a></p>
+			  </div>
+			</div>
+		      </div>
+		      <!-- Copyright information, DO NOT REMOVE! -->
+		      <p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+		      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> <!-- <span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></span></small></p> -->
+		    </div>
+                    </div>
+		</section>
 		<!-- End Contact Me section -->
 
 		</div><!-- end:colorlib-main -->
